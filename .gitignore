@@ -1,0 +1,26 @@
+# compilato
+*.exe
+*.o
+*.out
+
+# dati generati a runtime
+dati.txt
+dati.bin
+indice.txt
+
+# roba di replit
+.replit
+replit.nix
+.cache/
+
+# file inutili
+Makefile
+Posdelete.txt
+
+# cache di ccls (language server)
+.ccls-cache/
+
+# vscode (tieni solo la config del progetto)
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
