@@ -24,7 +24,15 @@ indice.txt      — generato a runtime (targa + numero record)
 dati.bin        — generato a runtime (record in formato binario)
 ```
 
-## Requisiti
+## Download
+
+Scarica `autobase.exe` dalla pagina [Releases](../../releases) ed eseguilo direttamente — nessuna installazione richiesta.
+
+**Compatibilità:**
+- Windows 10 / 11: funziona senza dipendenze aggiuntive
+- Windows 7 / 8.1: richiede il [Visual C++ Redistributable 2015–2022](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+
+## Requisiti (solo per compilare)
 
 - GCC (MinGW-w64 su Windows)
 - VS Code con estensione C/C++ (Microsoft)
@@ -35,8 +43,8 @@ dati.bin        — generato a runtime (record in formato binario)
 
 **Da terminale:**
 ```bash
-gcc -g main.c -o main.exe
-./main.exe
+gcc -O2 -std=c99 -o autobase.exe main.c
+./autobase.exe
 ```
 
 ## Installazione GCC su Windows
